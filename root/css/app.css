@@ -63,35 +63,39 @@ nav {
     }
 
 .project-box {
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 0;
+	position: relative;
+	float: left;
+	clear: none;
+	overflow: hidden;
 }
-.project-box h2{
+.project-box img{
+    position: relative;
+    z-index: 1;
+}
+.project-box h2, hr, p{
 	color: #fff;
-	text-transform: uppercase;
-	margin: 0;
+}
+.project-text-container {
+	top: 15%;
+	left: 25%;
+	width: 50%;
 	text-align: center;
-	vertical-align: middle;
-}
-.project-box p {
-	color: #fff;
-	margin: 0;
-
+	display: block;
+	position: absolute;
+	z-index: 2;
 }
 #kaibosh-box {
-	background: url(../img/kaibosh_30opacity.jpg) no-repeat center center;
-    padding-bottom: 50%;
+	/*background: url(../img/kaibosh_30opacity.jpg) no-repeat center center;
+    padding-bottom: 50%;*/
+    /*width: 100%;*/
 }
 #edi-soft-box {
-	background: url(../img/edisoft_30opacity.jpg) no-repeat center center;
-    padding-bottom: 67%;
+	/*background: url(../img/edisoft_30opacity.jpg) no-repeat center center;
+    padding-bottom: 67%;*/
 }
 #tidal-box {
-	background: url(../img/edisoft_30opacity.jpg) no-repeat center center;
-    padding-bottom: 67%;
+/*	background: url(../img/edisoft_30opacity.jpg) no-repeat center center;
+    padding-bottom: 67%;*/
 }
 
 .cta-button {
