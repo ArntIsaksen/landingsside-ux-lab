@@ -3,7 +3,7 @@ nav img {
 	padding: 10px 15px 10px 50px;
 }
 
-body {
+body, a, .button {
 	font-family: 'Average', serif;
 }
 
@@ -18,6 +18,7 @@ h1 {
 }
 nav {
 	width: inherit;
+	background-color: rgba(30, 30, 30, 0);
 }
 
 #header-box {
@@ -57,49 +58,59 @@ nav {
 }
 
 .full-width {
-    width: 100%;
-    margin: 0 auto;
-    max-width: initial;
-    }
-
-.project-box {
-	position: relative;
-	float: left;
-	clear: none;
-	overflow: hidden;
+	width: 100%;
+	max-width: initial;
+	margin: 0 auto;
 }
-.project-box img{
+.full-width-images {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.img-row {
+	overflow: hidden;
+	color: #fff;
+}
+.img-row img{
     position: relative;
     z-index: 1;
 }
-.project-box h2, hr, p{
+.img-row h2{
 	color: #fff;
 }
+.img-row hr {
+	margin: 2%;
+}
+.img-row h3 {
+	color: #fff;
+}
+
 .project-text-container {
-	top: 15%;
-	left: 25%;
-	width: 50%;
 	text-align: center;
-	display: block;
 	position: absolute;
 	z-index: 2;
-}
-#kaibosh-box {
-	/*background: url(../img/kaibosh_30opacity.jpg) no-repeat center center;
-    padding-bottom: 50%;*/
-    /*width: 100%;*/
-}
-#edi-soft-box {
-	/*background: url(../img/edisoft_30opacity.jpg) no-repeat center center;
-    padding-bottom: 67%;*/
-}
-#tidal-box {
-/*	background: url(../img/edisoft_30opacity.jpg) no-repeat center center;
-    padding-bottom: 67%;*/
+	top: 10%;
+	
+    left: 50%;
+    top: 50%;
+
+    /*
+    *  Where the magic happens
+    *  Centering method from CSS Tricks
+    *  http://css-tricks.com/centering-percentage-widthheight-elements/
+    */
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
 .cta-button {
-	padding: 50px 0;
+	padding: 50px 0 0 0;
+}
+.cta-button a{
+	padding: 30px 0;
+	font-size: 150%;
 }
 
 #other_costumers {
@@ -112,10 +123,18 @@ nav {
 #other_costumers li {
 	display: inline-block;
 	vertical-align: center;
-	margin: 1em 0;
+	margin: 0;
 }
 #other_costumers img {
-	padding: 30px 0;
+	padding: 0;
+}
+
+#human-row2 {
+	padding-top: 20px;
+}
+
+#asbjorn, #oda, #vilje, #arnt {
+	padding: 10px 10px;
 }
 
 #footer_block {
